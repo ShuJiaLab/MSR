@@ -17,6 +17,8 @@ Navigate to 20230410_22/Util/ and run B56_FLF016X080V20_PrePro.m to generate lig
   6. Denoising is applied to the elemental image stack for one beating cycle using the MIRO (https://github.com/ShuJiaLab/MIRO) algorithm in both spatial and temporal domains.
   7. The denoised image stack is decomposed into a sparse component containing moving cells and a low-rank component containing the static background. 
 
+Alternatively, navigate to 20230410_22/Util/ and run CFM_util.m to apply the MSR algorithm on standard non-light-field fluorescence images. Datasets for the demo will be uploaded to https://figshare.com/projects/MSR_for_Cardiac_Microscopy/239177 due to the large file size.
+
 Step 2:  
 Navigate to 20230410_22/Util/ and run flim.m to determine the nodes of the beating cycle for denoise and decomposition.
 An additional frame interpolation step is required for the pseudo-two-color decomposition of light-field images with two cell types stained with the same color, e.g., the red blood cells and cardiomyocytes across the heart. 
